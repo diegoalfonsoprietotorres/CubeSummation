@@ -33,6 +33,9 @@ public class CubeSummation {
     }
 
     public static void update(Map<Integer, Long> map, int x, int y, int z, long value, int N) {
+        x--;
+        y--;
+        z--;
         map.put(x + (y * N) + (z * N * N), value);
     }
 
